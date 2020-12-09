@@ -1,0 +1,42 @@
+/* Global */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.mm-menu {
+    --mm-color-background: #eee;
+    --mm-color-text: #111;
+}
+
+#my-page {
+    display: block;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+}
+
+#my-page::after {
+    content: "";
+    background: url('/images/code.jpg');
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    height: 2.8rem;
+}
